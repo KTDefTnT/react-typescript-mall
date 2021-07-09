@@ -7,3 +7,7 @@ export function login(params: LoginParams) {
     data: params,
   });
 }
+
+export function logout() {
+  return request('/api/logout');
+}
