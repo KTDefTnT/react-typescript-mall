@@ -3,11 +3,12 @@ import SearchInput from './SearchInput';
 import List from './List';
 
 import styles from './index.less';
-import { DataType, QueryType, PaginationType } from '@/@types/search';
+import { QueryType, PaginationType } from '@/@types/search';
 import { queryList } from '@/services/search';
+import { ProductType } from '@/@types/product';
 
 interface ListState {
-  data: DataType[];
+  data: ProductType[];
   pagination: PaginationType;
 }
 

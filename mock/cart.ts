@@ -24,4 +24,9 @@ export default {
   'GET /api/getCart': {
     list: { data: getList() },
   },
+  'POST /api/cart/edit': (req: Request, res: Response) => {
+    res.send({
+      status: 'ok',
+    });
+  },
 };

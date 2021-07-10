@@ -1,5 +1,4 @@
 import { Effect, Reducer } from 'umi';
-import {} from '../.umi/plugin-dva/connect';
 
 interface UserModelType {
   namespace: string;

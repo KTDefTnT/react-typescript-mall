@@ -3,7 +3,7 @@ import { UserModelState } from './user';
 
 interface ConnectProps {
   dispatch: Dispatch;
-  location: Location & { state: { from: string } };
+  location?: Location & { state: { from: string } };
 }
 
 interface ConnectState {

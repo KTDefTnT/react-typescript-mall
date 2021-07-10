@@ -1,7 +1,7 @@
 var Mock = require('mockjs');
 import { getProduct } from './util';
 
-function getOList() {
+function getGoodsList() {
   let res = [];
   for (let i = 0; i < 11; i++) {
     let obj = getProduct();
@@ -19,7 +19,7 @@ function getOList() {
 
 // 代码中会兼容本地 service mock 以及部署站点的静态数据
 export default {
-  'GET /api/getOList': {
-    list: { data: getOList() },
+  'GET /api/getGoodsList': {
+    list: { data: getGoodsList() },
   },
 };

@@ -31,6 +31,7 @@ export default defineConfig({
         { path: '/', component: '@/pages/home/index' },
         { path: '/login', component: '@/pages/login/index' },
         { path: '/search', component: '@/pages/search/index' },
+        { path: '/product/:id', component: '@/pages/product/[id]' },
         {
           path: '/',
           component: '@/layouts/SecurityLayout/index',

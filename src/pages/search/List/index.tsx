@@ -1,13 +1,14 @@
 import React from 'react';
 import { ListView, WingBlank, Icon } from 'antd-mobile';
 import Tags from '@/components/Tags/index';
-import { DataType, PaginationType } from '@/@types/search';
+import { PaginationType } from '@/@types/search';
 import { Link } from 'umi';
 import classnames from 'classnames';
 import styles from './index.less';
+import { ProductType } from '@/@types/product';
 
 interface ListProps {
-  data: DataType[];
+  data: ProductType[];
   pagination: PaginationType;
   handleQuery: Function;
 }
@@ -55,7 +56,7 @@ const List: React.FC<ListProps> = ({ data, pagination, handleQuery }) => {
   );
 };
 
-function Node({ img, title, price, tags, id }: dataType) {
+function Node({ img, title, price, tags, id }: ProductType) {
   return (
     <Link className={styles.node} to={'/product/' + id}>
       <div className={classnames(styles.imgBox, 'xyCenter')}>
