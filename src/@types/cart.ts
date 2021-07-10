@@ -1,22 +1,20 @@
 import { Reducer } from 'umi';
 import { ProductType } from './product';
 
-interface CartModelType {
+export interface CartModelType {
   namespace: string;
-  state: CartState;
+  state: CartModelState;
   effects: {};
   reducers: {
     saveCart: Reducer;
   };
 }
 
-interface CartState {
+export interface CartModelState {
   data: CartProductType[];
 }
 
-interface CartProductType extends ProductType {
+export interface CartProductType extends ProductType {
   count: number;
   checked: boolean;
 }
-
-export { CartModelType, CartProductType, CartState };

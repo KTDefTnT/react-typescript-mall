@@ -1,5 +1,6 @@
 import { Dispatch, Location } from 'umi';
 import { UserModelState } from './user';
+import { CartModelState } from './cart';
 
 interface ConnectProps {
   dispatch: Dispatch;
@@ -8,6 +9,7 @@ interface ConnectProps {
 
 interface ConnectState {
   user: UserModelState;
+  cart: CartModelState;
 }
 
 export { ConnectProps, ConnectState };

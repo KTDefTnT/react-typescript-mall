@@ -9,3 +9,8 @@ export async function getCurrentUser(): Promise<any> {
 export async function getUserDetail(): Promise<any> {
   return request('/api/getUserDetail');
 }
+
+// 获取当前用户地址信息
+export async function getUserAddress(): Promise<any> {
+  return request('/api/getUserAddress');
+}
