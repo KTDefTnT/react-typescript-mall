@@ -31,7 +31,7 @@ const PayBar: React.FC<PayBarProps> = ({ cart }) => {
     <React.Fragment>
       <div className={styles.main}>
         <div className={styles.count}>共：{totalCount}件</div>
-        <div className={styles.price}>合计：{totalPrice}</div>
+        <div className={styles.price}>合计：{totalPrice.toFixed(2)}</div>
         <Button
           type="warning"
           onClick={onOpenChange}
