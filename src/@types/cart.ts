@@ -17,4 +17,12 @@ export interface CartModelState {
 export interface CartProductType extends ProductType {
   count: number;
   checked: boolean;
+  img?: string;
+}
+
+export interface UpdateProductType {
+  id: string;
+  checked: boolean;
+  index: number;
+  count: number;
 }

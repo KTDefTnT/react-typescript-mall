@@ -5,3 +5,7 @@ export function editCart() {
     method: 'POST',
   });
 }
+
+export function getCart() {
+  return request('/api/getCart');
+}
